@@ -1,2 +1,2 @@
-# temperature_calculator
-Temperature Calculator
+# temperature_converter
+Temperature Converter
