@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!-- Title + Description -->
+        <title>Temperature Converter</title>
+        <meta name="description" content="Temperature Converter with pure JavaScript optimised for all devices.">
+
+        <!-- Author -->
+        <meta name="author" content="Quick Coding Guides">
+
+        <!-- Icons -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/QCG_shortcut_icon_32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/QCG_shortcut_icon_16x16.png">
+        <link rel="icon" type="image/png" href="images/QCG_shortcut_icon_16x16.png" title="Massacre Gamin' Small Logo">
+        <link rel="shortcut icon" type="image/png" href="images/QCG_shortcut_icon_16x16.png" title="Massacre Gamin' Small Logo">
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="style/css/stylesheet.v1.min.css">
+
+        <!-- JavaScript / jQuery Script -->
+        <script type="text/javascript" src="style/jsfiles/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="style/jsfiles/script.v1.min.js"></script>
+
+        <!-- External Links: Fonts (Google, FontAwesome) -->
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Main -->
+        <main>
+            <!-- Section -->
+            <section class="weather_input_section">
+                <!-- Title -->
+                <h1>Temperature Calculator</h1>
+                <!-- Temp Wrapper -->
+                <div class="input_wrapper">
+                    <!-- Celsius -->
+                    <div class="input_container">
+                        <input id="inputCelsius" type="number" placeholder="Input Celsius" name="celsius" oninput="TemperatureConverter(this.id,this.value)" onchange="TemperatureConverter(this.id,this.value)">
+                        <p>Celsius</p>
+                    </div>
+                    <!-- Fahrenheit -->
+                    <div class="input_container">
+                        <input id="inputFahrenheit" type="number" placeholder="Input Fahrenheit" name="fahrenheit" oninput="TemperatureConverter(this.id,this.value)" onchange="TemperatureConverter(this.id,this.value)">
+                        <p>Fahrenheit</p>
+                    </div>
+                    <!-- Kelvin -->
+                    <div class="input_container">
+                        <input id="inputKelvin" type="number" placeholder="Input Kelvin" name="kelvin" oninput="TemperatureConverter(this.id,this.value)" onchange="TemperatureConverter(this.id,this.value)">
+                        <p>Kelvin</p>
+                    </div>
+                </div>
+                <!-- Clear Button -->
+                <p id="clearbutton" onclick="ClearValue()">Clear Values</p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="copyright">Made by <a href="https://www.quickcodingguides.com">Quick Coding Guides</a></p>
+        </footer>
+    </body>
+</html>
